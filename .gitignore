@@ -1,0 +1,15 @@
+# Output from latex command
+./nico-cv.aux
+./nico-cv.out
+./nico-cv.log
+./nico-cv.dvi
+./nico-cv.pdf
+texput.log
+output/*
+
+# Emacs files
+auto/*
+
+# Unsafe for web information
+private/*
+
