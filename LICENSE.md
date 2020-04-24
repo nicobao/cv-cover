@@ -17,7 +17,7 @@ This work relies on other librairies coming with their own license:
 ### Actual content
 
 This section concerns original raw texts and images/photos that will be rendered in the final output (usually in the form of a .pdf file):
-"Copyright (c) 2020, Nicolas Gimenez<nicolas.gimenez@baozi.technology>, All Rights Reserved".
+"Copyright (c) 2020, Nicolas Gimenez <nicolas.gimenez@baozi.technology>, All Rights Reserved".
 
 ### Template source code
 
