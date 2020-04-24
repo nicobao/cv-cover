@@ -1,4 +1,4 @@
-# CV
+# CV and Cover Letters
 
 This is my personal CV and cover letters. Content unsafe for web has been intentionally removed but the artifacts should still build correctly with dummy information.
 
