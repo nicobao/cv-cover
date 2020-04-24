@@ -25,19 +25,23 @@
 % https://tex.stackexchange.com/questions/483846/variables-with-input-from-separate-file
 % Use dummy values if file not found:
 % https://tex.stackexchange.com/a/377312/213552
-\InputIfFileExists{private/private-info.tex}{}{
+\InputIfFileExists{private/shared.tex}{}{
+    \newcommand\Firstname{John}
+    \newcommand\Lastname{Doe}
     \newcommand\Email{john@doe.org}
     \newcommand\Phone{+1~(234)~567~890}
+    \newcommand\Site{www.doe.org}
+    \newcommand\Address{Paris, France}
 }
 
 
 % personal data
-\name{Nicolas}{Gimenez}
+\name{\Firstname}{\Lastname}
 \title{Software Engineer\newline Available from July 2020}                               % optional, remove / comment the line if not wanted
-\address{Paris, France}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\address{\Address}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{\Phone}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \email{\Email}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\homepage{baozi.technology}                         % optional, remove / comment the line if not wanted
+\homepage{\Site}                         % optional, remove / comment the line if not wanted
 \social[linkedin][www.linkedin.com/in/nicolas-gimenez-5155aba1/]{nicolas-gimenez}
 \social[github]{nicobao}                              % optional, remove / comment the line if not wanted
 % \photo[90pt][0pt]{profile.png}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file

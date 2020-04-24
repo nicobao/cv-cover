@@ -1,0 +1,85 @@
+\documentclass[11pt]{moderncv}
+
+\usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+\usepackage[sfdefault,book]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+
+% Get unsafe for web information from external files:
+% https://tex.stackexchange.com/questions/483846/variables-with-input-from-separate-file
+% Use dummy values if file not found:
+% https://tex.stackexchange.com/a/377312/213552
+\InputIfFileExists{private/shared.tex}{}{
+  \newcommand\Firstname{John}
+  \newcommand\Lastname{Doe}
+  \newcommand\Email{john@doe.org}
+  \newcommand\Site{www.doe.org}
+  \newcommand\Phone{+1~(234)~567~890}
+  \newcommand\Address{Paris, France}
+}
+\InputIfFileExists{private/cover-letter-1.tex}{}{
+  \newcommand\Recipient{Company Recruitment team}
+  \newcommand\RecipientAddress{Company, Inc.\\123 somestreet\\some city}
+  \newcommand\Date{January 01, 1984}
+  \newcommand\Opening{Dear Sir or Madam,}
+  \newcommand\Closing{Yours faithfully,}
+  \newcommand\Letter{
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+    Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+    Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+    Albert Einstein discovered that $e=mc^2$ in 1905.
+
+    \[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+  }
+}
+
+
+\name{\Firstname}{\Lastname}
+\address{\Address}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{\Phone}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{\Email}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\homepage{\Site}                         % optional, remove / comment the line if not wanted
+
+% indententation
+\makeatletter
+\patchcmd{\makeletterhead}% <cmd>
+{\raggedright \@opening}% <search>
+{\parindent=16pt % or what you think best
+  % \parskip=0pt plus 0.1pt % remove the blank lines between paragraphs
+  \@opening}% <replace>
+{}{\PatchFailed}% <success><failure>
+% patch \makeletterclosing to have the closing flush left
+\patchcmd{\makeletterclosing}
+{\@closing}
+{\vspace{1.em}\noindent\@closing}% the same vertical space as at the start
+{}{\patchfailed}
+\makeatother
+
+\begin{document}
+
+
+\hypersetup{
+  pdftitle = {\Firstname~\Lastname~-~Cover~Letter},
+  pdfauthor = {\Firstname~\Lastname},
+  pdfsubject = {\Firstname~\Lastname~-~Cover~Letter},
+  pdfkeywords = {\Firstname ~ \Lastname} {Cover~Letter}
+}
+
+% recipient data
+\recipient{\RecipientAddress}{\Recipient}
+\date{\Date}
+\opening{\Opening}
+\closing{\Closing}
+% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+\Letter
+\makeletterclosing
+
+% \clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}

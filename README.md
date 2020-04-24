@@ -26,12 +26,10 @@ Run `./build-cv.sh`.
 
 ### Build cover letters
 
-Actual cover letter content must be named `private/cover-letter-#number.tex` with `#number` a unique number.
-They use content from `cover-letter-template.tex`.
+Actual content of cover letter content must be named `private/cover-letter-#number.tex` with `#number` a unique number.
+They use content from `cover-letter-#number.tex`.
 
 Run `./build-cover-letters.sh` to build them all.
-
-Run `./build-cover-letters.sh #number` to build the cover-letter number `#number`. 
 
 ## License
 
