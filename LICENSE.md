@@ -10,7 +10,7 @@ Both LaTeX and this package and template are licensed under the [LaTeX Project P
 
 This work relies on other librairies coming with their own license:
 - [Fira Font](https://www.ctan.org/tex-archive/fonts/fira/) licensed under the [SIL Open Font License](https://www.ctan.org/license/ofl) and the [LaTeX Project Public License](https://www.ctan.org/license/lppl)
-- kantlipsum(https://ctan.org/tex-archive/macros/latex/contrib/kantlipsum) licensed under the [LaTeX Project Public License 1.3c](https://ctan.org/license/lppl1.3c).
+- [kantlipsum](https://ctan.org/tex-archive/macros/latex/contrib/kantlipsum) licensed under the [LaTeX Project Public License 1.3c](https://ctan.org/license/lppl1.3c).
 
 ## Modified work
 
