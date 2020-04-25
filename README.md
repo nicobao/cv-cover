@@ -28,7 +28,7 @@ Actual content of CV must be stored in `private/shared.tex`.
 
 ### Build cover letters
 
-Actual cover letter content must be stored in `private/cover-letters/`
+Actual cover letter content must be stored in `private/cover-letters/`. 
 They fill `./cover-letter.tex`.
 
 Run `./build-cover-letters.sh` to build them all.
