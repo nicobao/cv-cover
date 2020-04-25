@@ -47,6 +47,8 @@ Examples of private folder files are available in the `./examples` folder.
 
 This project is primarily distributed under the terms of the BSD-Patent License, with portions covered by various OSI-approved licenses.
 
+See [LICENSE-BSD](LICENSE-BSD), and [COPYRIGHT](COPYRIGHT.md) for details.
+
 ### Documentation
 
 The following content: 
@@ -54,8 +56,6 @@ The following content:
 * issues
 * wiki
 are distributed under the [Creative Commons - Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en).
-
-See [LICENSE-BSD](LICENSE-BSD), and [COPYRIGHT](COPYRIGHT.md) for details.
 
 ## Contributing
 
