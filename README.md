@@ -68,7 +68,7 @@ For example, to apply to Acme Inc, create `private/cover-letters/Acme.tex` with 
 
 ### Private folder
 
-An example of files in private folder is available in the `example/` folder.
+An example of files that should be created in private folder is available in the `example/private` folder.
 
 ### Template moderncv
 
