@@ -5,7 +5,7 @@ EXTENSION=.tex
 COVERPATH=private/cover-letters
 
 build_filename () {
-        echo "Building $filename..."
+        echo "Building $1..."
         echo "--------------------"
         filenameWithoutPath=$(basename $1)
         filenameWithoutExtension="${filenameWithoutPath%.*}"
