@@ -79,5 +79,5 @@ are all distributed under the [Creative Commons - Attribution 4.0 International 
 
 ### Disclaimer
 
-By contributing to this project, either by opening an issue, updating the wiki, or sending a commit/pull-request via git, you accept to license your work under the [license used by the project](#license).
+By contributing to this repository, either by opening an issue, updating the wiki, or sending a commit/pull-request via git, you accept to license your work under the [license used by the project](#license).
 
