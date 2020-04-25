@@ -11,7 +11,7 @@ output/*
 auto/*
 
 # Unsafe for web information
-private/*
+private/
 
 # swap file
 *.swp
