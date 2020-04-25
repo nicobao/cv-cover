@@ -23,7 +23,7 @@ sudo dnf install texlive texlive-moderncv.noarch texlive-moderncv-doc.noarch tex
 
 ### On Windows
 
-Beware that this project requires you to install Bash.
+Beware that this project requires you to install [Bash](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/).
 
 ## Build
 
