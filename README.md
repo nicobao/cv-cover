@@ -43,6 +43,21 @@ Examples of private folder files are available in the `./examples` folder.
 
 ## License
 
+### Source code
+
 This project is primarily distributed under the terms of the BSD-Patent License, with portions covered by various OSI-approved licenses.
 
+### Documentation
+
+The following content: 
+* accompanying documentation (markdown files)
+* issues
+* wiki
+are distributed under the [Creative Commons - Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en).
+
 See [LICENSE-BSD](LICENSE-BSD), and [COPYRIGHT](COPYRIGHT.md) for details.
+
+## Contributing
+
+By contributing to this project, either by opening an issue, updating the wiki, or sending a commit/pull-request via git, you accept to license your work under the [license used by the project](#License).
+
