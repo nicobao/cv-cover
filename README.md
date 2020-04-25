@@ -52,15 +52,17 @@ Actual content of CV must be stored in `private/shared.tex`.
 Actual cover letter content must be stored in `private/cover-letters/`. 
 They fill `./cover-letter.tex` template file.
 
+The name of the files in `private/cover-letters/` will be reused when outputing the .pdf filenames.
+
 #### Build all letters
 
 Run `./build-cover-letters.sh` to build them all.
 
 #### Build specific letters
 
-Run `./build-cover-letters.sh letter-name-1 letter-name-2` to build letter `letter-name-1` and `letter-name-2`.
+Run `./build-cover-letters.sh Company1 Company2` to build cover letters for `Company1` and `Company2`.
 
-For example, to apply to Acme Inc, create `private/cover-letters/acme.tex` with your cover letter content, and then run `./build-cover-letters.sh acme` to build only this specific letter.
+For example, to apply to Acme Inc, create `private/cover-letters/Acme.tex` with your cover letter content, and then run `./build-cover-letters.sh Acme` to build only this specific letter.
 
 ## Examples
 
