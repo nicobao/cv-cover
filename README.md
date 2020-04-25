@@ -14,11 +14,11 @@ git clone https://github.com/nicobao/cv-cover.git
 ```
 
 Then install dependencies:
-- texlive
-- moderncv package
-- fira font
+- a LaTeX build system like [texlive](https://tug.org/texlive/acquire-netinstall.html)
+- [moderncv package](https://www.ctan.org/pkg/moderncv)
+- [fira font](https://www.ctan.org/tex-archive/fonts/fira/)
 
-Make sure the command `pdflatex` works.
+Make sure the command `pdflatex` works and [Bash](https://www.gnu.org/software/bash/) is correctly installed.
 
 ### On Fedora
 
@@ -28,7 +28,7 @@ sudo dnf install texlive texlive-moderncv.noarch texlive-moderncv-doc.noarch tex
 
 ### On Windows
 
-Beware that this project requires you to install [Bash](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/).
+Beware that this project requires you to install [Bash](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/), that is not shipped by default.
 
 ## Build
 
