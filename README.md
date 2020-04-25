@@ -18,17 +18,13 @@ Then install dependencies:
 - [moderncv package](https://www.ctan.org/pkg/moderncv)
 - [fira font](https://www.ctan.org/tex-archive/fonts/fira/)
 
-Make sure the command `pdflatex` works and [Bash](https://www.gnu.org/software/bash/) is correctly installed.
+Make sure the command `pdflatex` works and [Bash](https://www.gnu.org/software/bash/) is correctly installed. Beware that Bash is not shipped by default on Windows.
 
 ### On Fedora
 
 ```
 sudo dnf install texlive texlive-moderncv.noarch texlive-moderncv-doc.noarch texlive-fira-doc.noarch texlive-fira.noarch 
 ```
-
-### On Windows
-
-Beware that this project requires you to install [Bash](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/), that is not shipped by default.
 
 ## Build
 
