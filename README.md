@@ -2,7 +2,7 @@
 This is my personal CV and cover letters. Content unsafe for web has been intentionally removed but the artifacts should still build correctly with dummy information.
 Feel free to use this repo as a basis for your own CV/Cover Letters.
 
-It is based on LaTeX [moderncv template file](mirrors.ctan.org/macros/latex/contrib/moderncv/examples/template.tex).
+It is based on LaTeX [moderncv template file](http://mirrors.ctan.org/macros/latex/contrib/moderncv/examples/template.tex).
 
 ## Installation
 

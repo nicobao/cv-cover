@@ -18,5 +18,5 @@ licensed under the [BSD-Patent](https://opensource.org/licenses/BSDplusPatent), 
 This work includes packages written by third parties.
 The following third party packages are included, and carry their own copyright notices and license terms:
 * LaTeX distributed under LaTeX Project Public License version 1.3c <http://www.latex-project.org/lppl/>
-* LaTeX package [moderncv](https://ctan.org/pkg/moderncv) and [its template](https://ctan.org/pkg/moderncv) distributed under LaTeX Project Public License version 1.3c <http://www.latex-project.org/lppl/>.
+* LaTeX package [moderncv](https://ctan.org/pkg/moderncv) and [its template](http://mirrors.ctan.org/macros/latex/contrib/moderncv/examples/template.tex) distributed under LaTeX Project Public License version 1.3c <http://www.latex-project.org/lppl/>.
 * [Fira Font](https://www.ctan.org/tex-archive/fonts/fira/) licensed under the [SIL Open Font License](https://www.ctan.org/license/ofl) and the [LaTeX Project Public License](https://www.ctan.org/license/lppl)
