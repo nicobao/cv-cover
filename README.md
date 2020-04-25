@@ -79,7 +79,7 @@ See [LICENSE-BSD](LICENSE-BSD), and [COPYRIGHT](COPYRIGHT.md) for details.
 ### Documentation
 
 The following content: 
-* accompanying documentation (markdown files)
+* accompanying documentation (markdown and plain text files)
 * issues
 * wiki
 
