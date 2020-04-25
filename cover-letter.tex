@@ -8,6 +8,7 @@
 \usepackage[T1]{fontenc}
 \renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
 
+% Receiving parameter \Filename from command line https://tex.stackexchange.com/a/1495/213552
 \ifdefined\filename
   \def\Filename{\filename}
 \else
@@ -26,7 +27,7 @@
   \newcommand\Phone{+1~(234)~567~890}
   \newcommand\Address{Paris, France}
 }
-\InputIfFileExists{private/cover-letters/\Filename}{}{
+\InputIfFileExists{\Filename}{}{
   \newcommand\Recipient{Company Recruitment team}
   \newcommand\RecipientAddress{Company, Inc.\\123 somestreet\\some city}
   \newcommand\Date{January 01, 1984}
