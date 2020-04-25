@@ -14,6 +14,11 @@ git clone https://github.com/nicobao/cv-cover.git
 ```
 
 Then install dependencies:
+- texlive
+- moderncv package
+- fira font
+
+Make sure the command `pdflatex` works.
 
 ### On Fedora
 
