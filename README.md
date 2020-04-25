@@ -39,7 +39,7 @@ For example if you store `private/cover-letters/acme.tex` for applying to Acme I
 
 ## Examples of private folder
 
-Examples of private folder files are available in the `./examples` folder.
+An example of private folder is available in the `./example` folder.
 
 ## License
 
