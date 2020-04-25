@@ -13,6 +13,8 @@ git clone git@github.com:nicobao/cv-cover.git
 git clone https://github.com/nicobao/cv-cover.git
 ```
 
+Then install dependencies:
+
 ### On Fedora
 
 ```
