@@ -50,13 +50,13 @@ Run `./build-cover-letters.sh` to build them all.
 
 #### Build specific letters
 
-Run `./build-cover-letters.sh letter-name-1 letter-name-2` to build letter `letter-name-1`, `letter-name-2`.
+Run `./build-cover-letters.sh letter-name-1 letter-name-2` to build letter `letter-name-1` and `letter-name-2`.
 
 For example, to apply to Acme Inc, create `private/cover-letters/acme.tex` with your cover letter content, and then run `./build-cover-letters.sh acme` to build only this specific letter.
 
 ## Examples of private folder
 
-An example of files in private folder is available in the `./example` folder.
+An example of files in private folder is available in the `example/` folder.
 
 ## License
 
