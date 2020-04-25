@@ -39,9 +39,7 @@ The following commands assume you're currently in the repository root directory 
 
 ### Build all
 
-To build all Cover Letters (all file in .tex from `private/cover-letters`):
-
-run `./build.sh`.
+Run `./build.sh`.
 
 ### Build CV
 
