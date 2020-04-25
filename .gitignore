@@ -15,3 +15,8 @@ private/
 
 # swap file
 *.swp
+
+# ignore output
+output/*
+# exception to the rule
+!output/README.md
