@@ -1,6 +1,6 @@
 # CV and Cover Letters
-
 This is my personal CV and cover letters. Content unsafe for web has been intentionally removed but the artifacts should still build correctly with dummy information.
+Feel free to use this repo as a basis for your own CV/Cover Letters.
 
 It is based on LaTeX [moderncv template file](mirrors.ctan.org/macros/latex/contrib/moderncv/examples/template.tex).
 
@@ -24,13 +24,25 @@ Run `./build.sh`.
 
 Run `./build-cv.sh`.
 
+Actual content of CV must be stored in `private/shared.tex`.
+
 ### Build cover letters
 
-Actual content of cover letter content must be named `private/cover-letter-#number.tex` with `#number` a unique number.
-They use content from `cover-letter-#number.tex`.
+Actual cover letter content must be stored in `private/cover-letters/`
+They fill `./cover-letter.tex`.
 
 Run `./build-cover-letters.sh` to build them all.
 
+Run `./build-cover-letters.sh letter-name-1 letter-name-2` to build letter `letter-name-1`, `letter-name-2`.
+
+For example if you store `private/cover-letters/acme.tex` for applying to Acme Inc., you can run `./build-cover-letters.sh acme` to build only this letter.
+
+## Examples of private folder
+
+Examples of private folder files are available in the `./examples` folder.
+
 ## License
 
-See [LICENSE](LICENSE.md).
+This project is primarily distributed under the terms of the BSD-Patent License, with portions covered by various OSI-approved licenses.
+
+See [LICENSE-BSD](LICENSE-BSD), and [COPYRIGHT](COPYRIGHT.md) for details.

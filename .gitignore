@@ -13,3 +13,5 @@ auto/*
 # Unsafe for web information
 private/*
 
+# swap file
+*.swp
