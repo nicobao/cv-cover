@@ -28,6 +28,7 @@ build_all () {
             build_filename $filename
         done
     else
+        # No .tex file or directory does not exist: build dummy cover letter
         build_filename Company
     fi
 }
