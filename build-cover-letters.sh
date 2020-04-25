@@ -15,14 +15,21 @@ build_filename () {
 }
 
 build_all () {
-    echo "Building all cover letters..."
-    echo "--------------------"
-    # Looping through all files in a directory with the same extension
-    # https://stackoverflow.com/a/14505622/11046178
-    for filename in $COVERPATH/*.tex; do
-        [ -f "$filename" ] || break
-        build_filename $filename
-    done
+    # Check if there is at least one .tex file in the coverpath directory
+    # https://unix.stackexchange.com/a/87476/408649
+    if ls ${COVERPATH}/*.tex &>/dev/null
+    then
+        echo "Building all cover letters..."
+        echo "--------------------"
+        # Looping through all files in a directory with the same extension
+        # https://stackoverflow.com/a/14505622/11046178
+        for filename in $COVERPATH/*.tex; do
+            [ -f "$filename" ] || break
+            build_filename $filename
+        done
+    else
+        build_filename Company
+    fi
 }
 
 if [ -z "$1" ]
