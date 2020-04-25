@@ -26,7 +26,9 @@ cd cv-cover
 
 ### Build all
 
-Run `./build.sh`.
+To build all Cover Letters (all file in .tex from `private/cover-letters`):
+
+run `./build.sh`.
 
 ### Build CV
 

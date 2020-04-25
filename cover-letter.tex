@@ -8,6 +8,12 @@
 \usepackage[T1]{fontenc}
 \renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
 
+\ifdefined\filename
+  \def\Filename{\filename}
+\else
+  \def\Filename{dummy}
+\fi
+
 % Get unsafe for web information from external files:
 % https://tex.stackexchange.com/questions/483846/variables-with-input-from-separate-file
 % Use dummy values if file not found:
@@ -20,7 +26,7 @@
   \newcommand\Phone{+1~(234)~567~890}
   \newcommand\Address{Paris, France}
 }
-\InputIfFileExists{private/cover-letter-1.tex}{}{
+\InputIfFileExists{private/cover-letters/\Filename}{}{
   \newcommand\Recipient{Company Recruitment team}
   \newcommand\RecipientAddress{Company, Inc.\\123 somestreet\\some city}
   \newcommand\Date{January 01, 1984}
