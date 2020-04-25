@@ -62,9 +62,15 @@ Run `./build-cover-letters.sh letter-name-1 letter-name-2` to build letter `lett
 
 For example, to apply to Acme Inc, create `private/cover-letters/acme.tex` with your cover letter content, and then run `./build-cover-letters.sh acme` to build only this specific letter.
 
-## Examples of private folder
+## Examples
+
+### Private folder
 
 An example of files in private folder is available in the `example/` folder.
+
+### Template moderncv
+
+The original official moderncv template file is directly available in `example/template.tex`. It contains helpful comments and can serve as documentation.
 
 ## License
 
