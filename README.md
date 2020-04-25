@@ -10,6 +10,10 @@ It is based on LaTeX [moderncv template file](mirrors.ctan.org/macros/latex/cont
 
 ```
 sudo dnf install texlive texlive-moderncv.noarch texlive-moderncv-doc.noarch texlive-fira-doc.noarch texlive-fira.noarch 
+
+git clone git@github.com:nicobao/cv-cover.git 
+# OR
+git clone https://github.com/nicobao/cv-cover.git
 ```
 
 ## Build
@@ -18,14 +22,7 @@ Output files will be stored in the `output/` directory.
 
 ### Prerequisites
 
-In a terminal, run:
-```
-git clone git@github.com:nicobao/cv-cover.git 
-# OR
-git clone https://github.com/nicobao/cv-cover.git
-# Then:
-cd cv-cover
-```
+The following commands assume you're currently in the repository root directory (`cd cv-cover` after your git clone).
 
 ### Build all
 
