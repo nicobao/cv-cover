@@ -9,7 +9,7 @@ It is based on LaTeX [moderncv template file](mirrors.ctan.org/macros/latex/cont
 ### On Fedora
 
 ```
-sudo dnf install texlive texlive-moderncv.noarch texlive-moderncv-doc.noarch texlive-fira-doc.noarch texlive-fira.noarch 'tex(kantlipsum.sty)' 
+sudo dnf install texlive texlive-moderncv.noarch texlive-moderncv-doc.noarch texlive-fira-doc.noarch texlive-fira.noarch 
 ```
 
 ## Build
