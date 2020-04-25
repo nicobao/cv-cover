@@ -6,14 +6,17 @@ It is based on LaTeX [moderncv template file](mirrors.ctan.org/macros/latex/cont
 
 ## Installation
 
+Clone the project:
+```
+git clone git@github.com:nicobao/cv-cover.git 
+# OR
+git clone https://github.com/nicobao/cv-cover.git
+```
+
 ### On Fedora
 
 ```
 sudo dnf install texlive texlive-moderncv.noarch texlive-moderncv-doc.noarch texlive-fira-doc.noarch texlive-fira.noarch 
-
-git clone git@github.com:nicobao/cv-cover.git 
-# OR
-git clone https://github.com/nicobao/cv-cover.git
 ```
 
 ## Build
