@@ -20,7 +20,10 @@ Output files will be stored in the `output/` directory.
 
 In a terminal, run:
 ```
-git clone git@github.com:nicobao/cv-cover.git
+git clone git@github.com:nicobao/cv-cover.git 
+# OR
+git clone https://github.com/nicobao/cv-cover.git
+# Then:
 cd cv-cover
 ```
 
