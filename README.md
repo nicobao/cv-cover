@@ -8,12 +8,7 @@ It is based on LaTeX [moderncv template file](mirrors.ctan.org/macros/latex/cont
 
 ### General instructions
 
-Clone the project:
-```
-git clone git@github.com:nicobao/cv-cover.git 
-# OR
-git clone https://github.com/nicobao/cv-cover.git
-```
+Clone the project.
 
 Then install dependencies:
 - a LaTeX build system like [texlive](https://tug.org/texlive/acquire-netinstall.html)
@@ -27,6 +22,10 @@ Make sure the command `pdflatex` works and [Bash](https://www.gnu.org/software/b
 #### On Fedora
 
 ```
+git clone git@github.com:nicobao/cv-cover.git 
+# OR
+git clone https://github.com/nicobao/cv-cover.git
+# then
 sudo dnf install texlive texlive-moderncv.noarch texlive-moderncv-doc.noarch texlive-fira-doc.noarch texlive-fira.noarch 
 ```
 
