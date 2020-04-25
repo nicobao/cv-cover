@@ -1,14 +1,31 @@
-# CV and Cover Letters
-This is my personal CV and cover letters. Content unsafe for web has been intentionally removed but the artifacts should still build correctly with dummy information.
-Feel free to use this repo as a basis for your own CV/Cover Letters.
+# CV/Cover Letter LaTeX moderncv templates + build tools 
+This is my personal CV and my cover letter template. Content unsafe for web has been intentionally removed but the artifacts will still build correctly with dummy information.
+This repo is aimed to be used as a basis for your own CV/Cover Letters.
 
 It is based on LaTeX [moderncv template file](http://mirrors.ctan.org/macros/latex/contrib/moderncv/examples/template.tex).
 
 ## Installation
 
-### On Fedora
+### General instructions
+
+Clone the project.
+
+Then install dependencies:
+- a LaTeX build system like [texlive](https://tug.org/texlive/acquire-netinstall.html)
+- [moderncv package](https://www.ctan.org/pkg/moderncv)
+- [fira font](https://www.ctan.org/tex-archive/fonts/fira/)
+
+Make sure the command `pdflatex` works and [Bash](https://www.gnu.org/software/bash/) is correctly installed. Beware that Bash is not shipped by default on Windows.
+
+### Per-OS instructions
+
+#### On Fedora
 
 ```
+git clone git@github.com:nicobao/cv-cover.git 
+# OR
+git clone https://github.com/nicobao/cv-cover.git
+# then
 sudo dnf install texlive texlive-moderncv.noarch texlive-moderncv-doc.noarch texlive-fira-doc.noarch texlive-fira.noarch 
 ```
 
@@ -18,11 +35,7 @@ Output files will be stored in the `output/` directory.
 
 ### Prerequisites
 
-In a terminal, run:
-```
-git clone git@github.com:nicobao/cv-cover.git
-cd cv-cover
-```
+The following commands assume you're currently in the repository root directory (`cd cv-cover` after your git clone).
 
 ### Build all
 
@@ -39,17 +52,21 @@ Actual content of CV must be stored in `private/shared.tex`.
 ### Build cover letters
 
 Actual cover letter content must be stored in `private/cover-letters/`. 
-They fill `./cover-letter.tex`.
+They fill `./cover-letter.tex` template file.
+
+#### Build all letters
 
 Run `./build-cover-letters.sh` to build them all.
 
-Run `./build-cover-letters.sh letter-name-1 letter-name-2` to build letter `letter-name-1`, `letter-name-2`.
+#### Build specific letters
 
-For example if you store `private/cover-letters/acme.tex` for applying to Acme Inc., you can run `./build-cover-letters.sh acme` to build only this letter.
+Run `./build-cover-letters.sh letter-name-1 letter-name-2` to build letter `letter-name-1` and `letter-name-2`.
+
+For example, to apply to Acme Inc, create `private/cover-letters/acme.tex` with your cover letter content, and then run `./build-cover-letters.sh acme` to build only this specific letter.
 
 ## Examples of private folder
 
-An example of private folder is available in the `./example` folder.
+An example of files in private folder is available in the `example/` folder.
 
 ## License
 
@@ -70,5 +87,7 @@ are all distributed under the [Creative Commons - Attribution 4.0 International 
 
 ## Contributing
 
-By contributing to this project, either by opening an issue, updating the wiki, or sending a commit/pull-request via git, you accept to license your work under the [license used by the project](#license).
+### Disclaimer
+
+By contributing to this repository, either by opening an issue, updating the wiki, or sending a commit/pull-request via git, you accept to license your work under the [license used by the project](#license).
 
