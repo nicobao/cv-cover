@@ -21,6 +21,10 @@ Then install dependencies:
 sudo dnf install texlive texlive-moderncv.noarch texlive-moderncv-doc.noarch texlive-fira-doc.noarch texlive-fira.noarch 
 ```
 
+### On Windows
+
+Beware that this project requires you to install Bash.
+
 ## Build
 
 Output files will be stored in the `output/` directory.
