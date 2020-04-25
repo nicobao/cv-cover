@@ -16,6 +16,14 @@ sudo dnf install texlive texlive-moderncv.noarch texlive-moderncv-doc.noarch tex
 
 Output files will be stored in the `output/` directory.
 
+### Prerequisites
+
+In a terminal, run:
+```
+git clone git@github.com:nicobao/cv-cover.git
+cd cv-cover
+```
+
 ### Build all
 
 Run `./build.sh`.
