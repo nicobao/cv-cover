@@ -6,7 +6,10 @@ It is based on LaTeX [moderncv template file](http://mirrors.ctan.org/macros/lat
 
 ## Example output
 
+My CV with my professional email and dummy phone number:
 ![CV with dummy phone number](example/Nicolas-Gimenez-CV-en.png)
+
+My cover letter template:
 ![Dummy Cover Letter](example/Company-Cover-Letter.png)
 
 ## Installation
