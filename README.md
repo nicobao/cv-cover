@@ -4,6 +4,11 @@ This repo is aimed to be used as a basis for your own CV/Cover Letters.
 
 It is based on LaTeX [moderncv template file](http://mirrors.ctan.org/macros/latex/contrib/moderncv/examples/template.tex).
 
+## Example output
+
+![CV with dummy phone number](example/Nicolas-Gimenez-CV-en.png)
+![Dummy Cover Letter](example/Company-Cover-Letter.png)
+
 ## Installation
 
 ### General instructions
