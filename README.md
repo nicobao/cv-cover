@@ -84,20 +84,13 @@ The original official moderncv template file is directly available in `example/t
 
 ## License
 
-### Source code
-
-This project is primarily distributed under the terms of the BSD-Patent License, with portions covered by various OSI-approved licenses.
-
-See [LICENSE-BSD](LICENSE-BSD), and [COPYRIGHT](COPYRIGHT.md) for details.
-
-### Documentation
-
-The following content: 
-* accompanying documentation (markdown and plain text files)
+The following content:
+* git repository including source code and accompanying documentation
 * issues
 * wiki
+are all primarily distributed under the terms of the BSD-Patent License, with portions covered by various OSI-approved licenses.
 
-are all distributed under the [Creative Commons - Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en).
+See [LICENSE-BSD](LICENSE-BSD), and [COPYRIGHT](COPYRIGHT.md) for details.
 
 ## Contributing
 
