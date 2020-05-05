@@ -90,7 +90,7 @@ The following content:
 * wiki
 are all primarily distributed under the terms of the BSD-Patent License, with portions covered by various OSI-approved licenses.
 
-See [LICENSE-BSD](LICENSE-BSD), and [COPYRIGHT](COPYRIGHT.md) for details.
+See [LICENSE](LICENSE), and [COPYRIGHT](COPYRIGHT.md) for details.
 
 ## Contributing
 

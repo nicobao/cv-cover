@@ -13,7 +13,7 @@ Some files include explicit copyright notices and/or license notices.
 For full authorship information, see the version control history.
 
 Except as otherwise noted (below and/or in individual files), this work is
-licensed under the [BSD-Patent](https://opensource.org/licenses/BSDplusPatent), or see [LICENSE-BSD](LICENSE-BSD).
+licensed under the [BSD-Patent](https://opensource.org/licenses/BSDplusPatent), or see [LICENSE](LICENSE).
 
 This work includes packages written by third parties.
 The following third party packages are included, and carry their own copyright notices and license terms:
