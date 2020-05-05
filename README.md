@@ -88,6 +88,7 @@ The following content:
 * git repository including source code and accompanying documentation
 * issues
 * wiki
+
 are all primarily distributed under the terms of the BSD-Patent License, with portions covered by various OSI-approved licenses.
 
 See [LICENSE](LICENSE), and [COPYRIGHT](COPYRIGHT.md) for details.
