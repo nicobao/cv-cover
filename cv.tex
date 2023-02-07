@@ -16,10 +16,35 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+\usepackage[top=1.1cm, bottom=1.1cm, left=1cm, right=1cm]{geometry}
 % \usepackage[scale=0.75]{geometry}
 \setlength{\hintscolumnwidth}{1.9cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvheadnamewidth}{8cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+%\https://tex.stackexchange.com/questions/171909/how-to-implement-cvtripleitem-in-moderncv
+\newlength\Tripleitemmaincolumnwidth
+\newlength\tripleitemmaincolumnwidth
+
+\AtBeginDocument{%
+\setlength\tripleitemmaincolumnwidth{% 
+  \maincolumnwidth-2\hintscolumnwidth-2\separatorcolumnwidth}%
+\setlength\tripleitemmaincolumnwidth{.333333\tripleitemmaincolumnwidth}%   
+  }
+
+\newcommand*{\cvtripleitem}[7][.25em]{%
+ \cvitem[#1]{#2}{%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}#3\end{minipage}%
+   \hfill
+   \begin{minipage}[t]{\hintscolumnwidth}\raggedleft\hintstyle{#4}\end{minipage}%
+   \hspace*{\separatorcolumnwidth}%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}#5\end{minipage}%
+   \hfill
+   \begin{minipage}[t]{\hintscolumnwidth}\raggedleft\hintstyle{#6}\end{minipage}%
+   \hspace*{\separatorcolumnwidth}%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}#7\end{minipage}%
+   }%
+}
+%%%%%
 
 % Get unsafe for web information from external files:
 % https://tex.stackexchange.com/questions/483846/variables-with-input-from-separate-file
@@ -38,7 +63,7 @@
 
 % personal data
 \name{\Firstname}{\Lastname}
-\title{Software Engineer}                               % optional, remove / comment the line if not wanted
+\title{Software Engineer | privacy tech \& dev tools}                               % optional, remove / comment the line if not wanted
 \address{\Address}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{\Phone}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \email{\Email}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
@@ -47,8 +72,8 @@
 \social[github]{nicobao}                              % optional, remove / comment the line if not wanted
 % \photo[90pt][0pt]{profile.png}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 
-\quote{Full Stack, albeit more excited about Backend.\newline ``Senior'' enough to
-know that anyone can teach a lesson.}
+\quote{Identify essential complexity, eliminate accidental complexity\newline ``Senior'' enough to
+know that anyone can teach a lesson}
 
 % Increase quote size: https://tex.stackexchange.com/a/247503/213552
 \let\originalrecomputecvlengths\recomputecvlengths
@@ -76,66 +101,66 @@ know that anyone can teach a lesson.}
 \section{Experience}
 %\subsection{Vocational}
 
-
-\cventry{2020--now}{Full Stack Software Engineer}{Zaack - Web, IOT}{Paris}{}{
+\cventry{2022--now Remote}{Senior Software Architect}{CIDgravity - Filecoin, Protocol Labs Network}{}{}{
 \begin{itemize}%
-\item Frontend development of cross-platform PWA in Typescript using React \& Material UI;
-\item Backend development in Java Spring \& Kotlin;
-\item DevOps with GitLab CI, Terraform, Kubernetes, Docker (GCP and OVHCloud);
+\item Improving software development practices (local dev environment, git workflow, CI, unit testing)
+\item Frontend development in Javascript, React and Bootstrap, backend development in Golang
+\item Refactoring frontend layout. Adding localization support (i18n, Weblate)
+\item Moving to api-first development (OpenAPI - code generation from services descriptions)
+\item Creating scalable architecture to enable fast access to a large dataset via both dashboard and public API
+\item Collaborating with other ecosystem stakeholders (Boost and Lotus teams especially)
+\item Graduating from PL Launchpad v3 (6 weeks learning program), and mentoring in Launchpad v5 and v7
+\item Participating in LabWeek, FIL, IPFSCamp, CoD Summit, CryptoEconDay, libp2p Day in Austin, Paris \& Lisbon
 \end{itemize}}
 
-\cventry{2021--now}{Occasional open-source contributor}{GitHub}{Remote}{}{
+\cventry{2020--now Remote}{Occasional open-source contributor}{}{}{}{
 \begin{itemize}%
-\item Adding Reason syntax support to Caramel: an Erlang backend to the OCaml compiler (OCaml);
-\item Creating Picoli example codestart in Red Hat's awesome Quarkus framework (Java);
+\item Generating JSON Schema from structs in Filecoin Boost - in progress (Golang)
+\item Adding Reason syntax support to Caramel: an Erlang backend to the OCaml compiler (OCaml)
+\item Creating Picoli example codestart in Red Hat's Quarkus framework (Java)
+\item Writing the Dart SDK for Krypton, an open-source NodeJS authentication middleware
 \end{itemize}}
 
-\cventry{2021--2021}{Blockchain Developer}{HOPR Association - Gitcoin bounty issue}{Remote}{}{
+\cventry{2021--2021 Remote}{Typescript Developer | libp2p-based mixnet}{HOPR Association - Gitcoin bounty issue}{}{}{
 \begin{itemize}%
-\item Abstracting away all the logging in the hoprd node (Typescript \& NodeJS);
-\item Sending the logs to the IPFS network in an anonymous way (Ceramic Network);
+\item Abstracting away all the logging in the hoprd node (NodeJS)
+\item Sending the logs to the IPFS network in an anonymous way (Ceramic Network)
 \end{itemize}}
 
-\cventry{2019--2020}{Founder | Freelance Software Engineer}{Baozi Technology
-  SAS}{Remote}{}{
+
+\cventry{2020--2022 Paris}{Full Stack Software Engineer}{Zaack - IoT}{}{}{
 \begin{itemize}%
-\item Self-learning various functional languages such as Elixir/Erlang, Go, OCaml;
-\item Development of Krypton, a NodeJS authentification middleware (MongoDB, GraphQL);
-\item Development of https://baozi.technology in GatsbyJS (React \& GraphQL).
+\item Frontend development of cross-platform PWA in Typescript using React \& Material UI
+\item Backend development in Java Spring \& Kotlin
+\item DevOps with GitLab CI, Terraform, Kubernetes, Docker (GCP and OVHCloud)
 \end{itemize}}
 
-\cventry{2016--2020}{Full Stack Software Engineer}{ATRAK a.s - Air Traffic Control}{Prague}{Czech
-  Republic}{Responsible for the whole product lifecycle in a team of five
-  people.%
+\cventry{2015--2020 Prague \& Remote}{Full Stack Software Engineer}{ATRAK a.s - Air Traffic Control}{}{}{Responsible for the whole product lifecycle in a team of five
+  people%
 \begin{itemize}%
-\item Evaluating the impact of high-level aviation requirements on our system;
-\item Backend development in Python - Oracle SQL - various non-standard APIs;
-\item Frontend development in JavaFX and Java Swing;
+\item Evaluating the impact of high-level aviation requirements on our system
+\item Backend development using Python asyncio - various non-standard protocols on top of TCP or UDP
+\item Frontend desktop development using JavaFX and Java Swing
+\item Participating in JVM Geecon conferences, self-learning Elixir/Erlang/OTP, Rust and OCaml
 \end{itemize}}
 
-\cventry{2014--2015}{Work-study contract in R\&D}{Thales Underwater
-	Systems}{Brest}{France}{Needs analysis, user-focused UI design of a future
-  anti-submarine combat system.\newline{}Development in JavaFX on a tactile screen.}
 %\subsection{Miscellaneous}
 %\cventry{year--year}{Job title}{Employer}{City}{}{Description}
 
 \section{Education}
-\cventry{2012-2015}{Master of IT Engineering}{IMT
-  Atlantique}{Brest, France}{}{Major in Software Systems \& Networks.}  % arguments 3 to 6 can be left empty
+\cventry{2012--2015 Brest}{Master of IT Engineering}{IMT
+  Atlantique}{}{}{Major in Software Systems \& Networks}  % arguments 3 to 6 can be left empty
 
 \section{Languages}
-\cvdoubleitem{French}{Native}{}{}
-\cvdoubleitem{English}{Fluent}{Spanish}{A2 - Conversational}
-\cvdoubleitem{Mandarin}{A2 - Conversational}{Czech}{A2 - Conversational}
+\cvtripleitem{\bfseries French}{Native}{\bfseries English}{Fluent}{\bfseries Mandarin}{Conversational}
 
-\section{Computer skills}
-\cvdoubleitem{Main}{Java, Kotlin, Python}{DevOps}{CI, Kubernetes, Terraform, Docker}
-\cvdoubleitem{Secondary}{Erlang/Elixir/OTP, OCaml, Go}{Used}{C/C++/C\#, Dart, Rust, Clojure, Racket}
-\cvdoubleitem{Web}{HTML/CSS, SQL, JS/TS (React)}{Systems}{8+ years experience with GNU/Linux}
+\section{Stack}
+\cvdoubleitem{\bfseries Languages}{Java, Kotlin, Typescript, Go, Python}{\bfseries DevOps}{CI/CD, Kubernetes, Terraform, Docker}
+\cvdoubleitem{\bfseries Frontend}{CSS, Material UI, Bootstrap, React, Redux}{\bfseries Web3}{IPLD, IPFS, Filecoin, libp2p, DID, VC, UCAN}
 
 \section{Interests}
-\cvitem{Blogging}{Business and ethics in technology and open-source licenses.}
-\cvitem{Sport}{National Team Champion of Savate French Boxing in 2015.}
+\cvitem{\bfseries China}{Language, music, opera, food, philosophy, lifestyle}
+\cvitem{\bfseries Sport}{National Team Champion of Savate French Boxing in 2015}
 
 
 % \section{Extra 1}
