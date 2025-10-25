@@ -31,7 +31,7 @@
 \setlength\tripleitemmaincolumnwidth{.333333\tripleitemmaincolumnwidth}%   
   }
 
-\newcommand*{\cvtripleitem}[7][.25em]{%
+\renewcommand*{\cvtripleitem}[7][.25em]{%
  \cvitem[#1]{#2}{%
    \begin{minipage}[t]{\tripleitemmaincolumnwidth}#3\end{minipage}%
    \hfill
@@ -63,7 +63,7 @@
 
 % personal data
 \name{\Firstname}{\Lastname}
-\title{Software Engineer | privacy tech \& dev tools}                               % optional, remove / comment the line if not wanted
+\title{Software Engineer \& Technical Founder\newline Privacy, Civic Tech \& Decentralized Systems}                               % optional, remove / comment the line if not wanted
 \address{\Address}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{\Phone}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \email{\Email}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
@@ -72,14 +72,13 @@
 \social[github]{nicobao}                              % optional, remove / comment the line if not wanted
 % \photo[90pt][0pt]{profile.png}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 
-\quote{Identify essential complexity, eliminate accidental complexity\newline ``Senior'' enough to
-know that anyone can teach a lesson}
+\quote{Full-stack | Product \& dev team leadership\newline ``Senior'' enough to know that anyone can teach a lesson}
 
 % Increase quote size: https://tex.stackexchange.com/a/247503/213552
 \let\originalrecomputecvlengths\recomputecvlengths
 \renewcommand*{\recomputecvlengths}{%
   \originalrecomputecvlengths%
-  \setlength{\quotewidth}{0.7\textwidth}}
+  \setlength{\quotewidth}{0.85\textwidth}}
 
 % bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
 %   to show numerical labels in the bibliography (default is to show no labels)
@@ -100,48 +99,43 @@ know that anyone can teach a lesson}
 
 \section{Experience}
 %\subsection{Vocational}
-
-\cventry{2022--now Remote}{Senior Software Architect}{CIDgravity - Filecoin, Protocol Labs Network}{}{}{
+%
+  \cventry{2023--now Remote}{Co-Founder \& CTO}{Agora Citizen Network (fully open-source)}{}{}{
 \begin{itemize}%
-\item Improving software development practices (local dev environment, git workflow, CI, unit testing)
-\item Frontend development in Javascript, React and Bootstrap, backend development in Golang
-\item Refactoring frontend layout. Adding localization support (i18n, Weblate)
-\item Moving to api-first development (OpenAPI - code generation from services descriptions)
-\item Creating scalable architecture to enable fast access to a large dataset via both dashboard and public API
-\item Collaborating with other ecosystem stakeholders (Boost and Lotus teams especially)
-\item Graduating from PL Launchpad v3 (6 weeks learning program), and mentoring in Launchpad v5 and v7
-\item Participating in LabWeek, FIL, IPFSCamp, CoD Summit, CryptoEconDay, libp2p Day in Austin, Paris \& Lisbon
+\item Bootstrapped product from 0 to production: raised 200K+ EU grants, co-leading product strategy
+\item Built and led engineering team, managing deployment (AWS/GCP), actively coding > 70\% of the codebase
+\item Architected ZKP-based authentication with seamless UX
+\item Full-stack TypeScript: UCAN/DID-based auth (Racine protocol), Node.js backend, Vue/Quasar frontend
+\item Co-leading open-source Polis community: sponsored core algorithm Python rewrite, managing PRs
+\item Devconnect Scholars 2025 - collaborating with Ethereum ecosystem leaders
+\item Participating in EU Civic Tech consortium
 \end{itemize}}
 
-\cventry{2020--now Remote}{Occasional open-source contributor}{}{}{}{
+
+\cventry{2022--2023 Remote}{Senior Software Architect}{CIDgravity - Filecoin, Protocol Labs Network}{}{}{
 \begin{itemize}%
-\item Generating JSON Schema from structs in Filecoin Boost - in progress (Golang)
-\item Adding Reason syntax support to Caramel: an Erlang backend to the OCaml compiler (OCaml)
-\item Creating Picoli example codestart in Red Hat's Quarkus framework (Java)
-\item Writing the Dart SDK for Krypton, an open-source NodeJS authentication middleware
+\item Backend development in Go: APIs and services for decentralized storage pricing marketplace
+\item Frontend development in React, collaborating with Protocol Labs ecosystem (Boost, Lotus)
+\item Graduated from PL Launchpad v3, mentored in v5 and v7
 \end{itemize}}
 
-\cventry{2021--2021 Remote}{Typescript Developer | libp2p-based mixnet}{HOPR Association - Gitcoin bounty issue}{}{}{
+\cventry{2021--2021 Remote}{TypeScript Developer | libp2p-based mixnet}{HOPR Association (now Gnosis VPN) - Gitcoin bounty}{}{}{
 \begin{itemize}%
-\item Abstracting away all the logging in the hoprd node (NodeJS)
-\item Sending the logs to the IPFS network in an anonymous way (Ceramic Network)
+\item Refactored logging infrastructure in hoprd privacy node (Node.js/TypeScript)
+\item Implemented anonymous log aggregation to IPFS using Ceramic Network
 \end{itemize}}
 
 
 \cventry{2020--2022 Paris}{Full Stack Software Engineer}{Zaack - IoT}{}{}{
 \begin{itemize}%
-\item Frontend development of cross-platform PWA in Typescript using React \& Material UI
-\item Backend development in Java Spring \& Kotlin
-\item DevOps with GitLab CI, Terraform, Kubernetes, Docker (GCP and OVHCloud)
+\item Full-stack development: React/TypeScript PWA frontend, Java Spring/Kotlin backend
+\item DevOps: GitLab CI, Terraform, Kubernetes, Docker on GCP and OVHCloud
 \end{itemize}}
 
-\cventry{2015--2020 Prague}{Full Stack Software Engineer}{ATRAK a.s - Air Traffic Control}{}{}{Responsible for the whole product lifecycle in a team of five
-  people%
+\cventry{2015--2020 Prague}{Full Stack Software Engineer}{ATRAK a.s - Air Traffic Control}{}{}{
 \begin{itemize}%
-\item Evaluating the impact of high-level aviation requirements on our system
-\item Backend development using Python asyncio - various non-standard protocols on top of TCP or UDP
-\item Frontend desktop development using JavaFX and Java Swing
-\item Participating in JVM Geecon conferences, self-learning Elixir/Erlang/OTP, Rust and OCaml
+\item Backend: Python asyncio for real-time protocols on TCP/UDP
+\item Frontend: JavaFX and Java Swing desktop applications
 \end{itemize}}
 
 %\subsection{Miscellaneous}
@@ -155,11 +149,11 @@ know that anyone can teach a lesson}
 \cvtripleitem{\bfseries French}{Native}{\bfseries English}{Fluent}{\bfseries Mandarin}{Conversational}
 
 \section{Stack}
-\cvdoubleitem{\bfseries Languages}{Java, Kotlin, Typescript, Go, Rust, Python}{\bfseries DevOps}{CI/CD, Kubernetes, Terraform, Docker}
-\cvdoubleitem{\bfseries Frontend}{CSS, Material UI, Bootstrap, React, Redux}{\bfseries Web3}{IPLD, IPFS, Filecoin, libp2p, DID, VC, UCAN}
+\cvdoubleitem{\bfseries Languages}{Go, Rust, TypeScript, Python, Java, Kotlin}{\bfseries DevOps}{CI/CD, Kubernetes, Terraform, Docker, AWS, GCP}
+\cvdoubleitem{\bfseries Frontend}{Vue, Quasar, React, Redux, Material UI, Bootstrap}{\bfseries Web3}{libp2p, IPFS, Filecoin, DID, VC, UCAN, ZKP}
 
 \section{Interests}
-\cvitem{\bfseries China}{Language, music, opera, food, philosophy, lifestyle}
+\cvitem{\bfseries Weiqi/Go}{Fascinated by the depth of the most ancient abstract strategy game}
 \cvitem{\bfseries Sport}{National Team Champion of Savate French Boxing in 2015}
 
 

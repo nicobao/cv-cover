@@ -20,3 +20,6 @@ private/
 output/*
 # exception to the rule
 !output/README.md
+
+# MacOS
+.DS_Store
