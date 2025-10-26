@@ -53,9 +53,21 @@
 \phone[mobile]{\Phone}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \email{\Email}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \homepage{\Site}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{nicobao}
+\social[github]{nicobao}
+
+% Add social links to letter header (they're omitted by default in moderncv)
+% Solution from: https://tex.stackexchange.com/questions/256794
+\makeatletter
+\patchcmd{\makeletterhead}% patch to add social links
+  {\ifthenelse{\isundefined{\@extrainfo}}{}{\makenewline\@extrainfo}}% search after extrainfo line
+  {\ifthenelse{\isundefined{\@extrainfo}}{}{\makenewline\@extrainfo}%
+   \collectionloop{socials}{% add social links here
+     \makenewline\csname\collectionloopkey socialsymbol\endcsname\collectionloopitem}%
+  }% replace
+  {}{}% success/failure (empty means silent)
 
 % indententation
-\makeatletter
 \patchcmd{\makeletterhead}% <cmd>
 {\raggedright \@opening}% <search>
 {\parindent=16pt % or what you think best
